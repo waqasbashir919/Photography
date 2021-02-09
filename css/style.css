@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+html{
+  scroll-behavior: smooth;
+}
+.scroll-up-btn{
+  position: fixed;
+  background-color: rgb(136, 40, 136);
+  color: white;
+  padding: 0.5em 0.7em;
+  border-radius: 5px;
+  right: 3%;
+  bottom: 3%;
+  z-index: 999;
+  pointer-events: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.scroll-up-btn.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+.section_1{
+  height: 100vh;
+  min-height: 100vh;
+  width: 100%;
+}
+.section_1 .jumbotron{
+  background-color: black !important;
+  height: 10vh;
+  min-height: 10vh;
+  border-bottom: 1px solid white;
+}
+.section_1 .icons a{
+  color: white;
+  font-size: 1.4em;
+  letter-spacing: 10px;
+}
+.section_1 .heading h1{
+  font-weight: 800;
+  color: white;
+}
+.section_1 .SearchBar{
+  width: 50%;
+  float: right;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.section_1 .SearchBar input{
+  background-color: black;
+  border: none;
+}
+::placeholder{
+  font-size: 1vw;
+  color: white !important;
+}
+.section_1 .SearchBar input:valid,
+.section_1 .SearchBar input:focus{
+  color: white;
+  outline: none;
+}
+
+.section_1 .home{
+  background-color: black;
+}
+
+                                                  /* navbar */
+.section_1 .home .navbar-dark{
+  background-color: rgba(0,0,0,0) !important;
+}
+.section_1 .home .navbar-nav{
+  text-align: center;
+}
+.section_1 .home .navbar-brand img{
+  width: 120px;
+}
+.section_1 .home .nav-link{
+  color: white !important;
+  transition: 0.3s ease;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+.section_1 .home .nav-link:hover{
+  color: rgb(155, 155, 155) !important;
+}
+
+                                            /* card */
+.section_1 .card .card-img-overlay{
+  background-color: rgba(0,0,0,0.2);
+  transition: 0.3s ease-in-out;
+  color: white;
+}
+                                    /* segment 1 */
+.section_1 .segment_1 .card .card-img-overlay h1{
+  font-size: 3vw;
+  margin: 0 150px 30px 0;
+}
+.section_1 .card .card-img-overlay:hover{
+  background-color: rgba(0,0,0,0.6);
+}
+
+                                    /* segment 2 */
+.section_1 .segment_2 .card .card-img-overlay h3{
+    font-size: 1.5vw;
+    margin-bottom: 30px;
+}
+.section_1 .segment_2 .card .card-img-overlay .media img{
+    width: 40px;
+}
+.section_1 .segment_2 .card .card-img-overlay .media{
+  font-size: 0.7em;
+}
+
+                              /* responsive media queries */
+
+                              
+@media(max-width:480px){
+  .section_1 .home .navbar-brand img{
+    width: 80px;
+  }
+  .section_1 .segment_1 .card .card-img-overlay h1{
+    margin: 0 0 20px 0;
+  } 
+  .section_1 .segment_2 .card .card-img-overlay .media{
+    font-size: 0.8em;
+  }
+  .section_1 .segment_2 .card .card-img-overlay h3{
+    font-size: 2.5vw;
+  }
+}
+@media(max-width:768px){
+  .section_1 .segment_1 .card .card-img-overlay h1{
+    margin: 0 0 20px 0;
+  }
+  .section_1 .segment_2 .card .card-img-overlay h3{
+    font-size: 2.5vw;
+  }
+}
+
+@media(max-width:991px){
+  .section_1 .segment_2 .card .card-img-overlay .media{
+    font-size: 0.8em;
+  }
+}
